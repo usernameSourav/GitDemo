@@ -19,6 +19,7 @@ public class tooltipStrategy1 {
 		driver.manage().window().maximize();
 		WebElement target=driver.findElement(By.id("age"));
 		String tooltipText=target.getAttribute("title");
+		System.out.println("checking for branch");
 		System.out.println("Retrieved tooltip test as: " +tooltipText);
 		Assert.assertEquals("We ask for your age only for statistical purposes", tooltipText);
 		driver.quit();
